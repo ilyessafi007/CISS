@@ -1,0 +1,15 @@
+version: '3'
+services:
+  ciss_docker:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: ciss_docker
+    restart: unless-stopped
+    tty: true
+    working_dir: /home/ciss_docker
+    volumes:
+       - ./:/home/ciss_docker
+    devices:
+        - /dev/ttyACM0:/dev/ttyACM0
+    privileged: true
