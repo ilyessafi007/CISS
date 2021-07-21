@@ -17,7 +17,7 @@ Install Docker and Docker-compose.
 
 ```sh
 cd CISS 
-docker-compose up  ciss_docker
+sudo docker-compose up  ciss_docker
 ```
 
 This will create the CISS python script image and pull in the necessary dependencies.
