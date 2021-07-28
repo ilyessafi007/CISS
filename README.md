@@ -16,7 +16,7 @@ Install Docker and Docker-compose.
 ## Docker
 
 ```sh
-cd CISS 
+cd CISS #your directory path
 sudo docker-compose up ciss_docker
 ```
 
